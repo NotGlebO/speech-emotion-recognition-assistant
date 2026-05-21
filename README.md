@@ -44,6 +44,23 @@ Pēc instalācijas nepieciešams lejupielādēt modeli:
 
 ollama pull llama3.1:8b
 
+---
+
+# Datu kopas lejupielāde
+
+Tā kā izmantotā datu kopa ir pārāk liela GitHub glabāšanai, tā netiek iekļauta repozitorijā.
+
+Lai palaistu projektu, nepieciešams:
+
+1. Lejupielādēt datu kopas arhīvu no Google Drive:
+
+[GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/10YsnVHBD-tUqDPq8W4bxIM41lWrDIbRI/view?usp=sharing)
+
+2. Izpakot arhīvu.
+
+3. Ievietot datu kopas mapi projekta direktorijā.
+
+
 
 ---
 # Vosk modeļa lejupielāde
