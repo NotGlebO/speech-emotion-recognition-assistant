@@ -78,9 +78,9 @@ python main.py
 
 Sistēma izmanto šādas komandas:
 
-- bob — aktivizēt asistentu
-- reset — notīrīt sarunas atmiņu
-- exit — aizvērt programmu
+- bob - aktivizēt asistentu
+- reset - notīrīt sarunas atmiņu
+- exit - aizvērt programmu
 
 ---
 
