@@ -34,6 +34,20 @@ Ja requirements.txt nav pieejams, nepieciešams instalēt bibliotēkas manuāli.
 
 ---
 
+# Ollama instalācija
+
+Lai virtuālais asistents darbotos, nepieciešams instalēt Ollama:
+
+https://ollama.com/download
+
+Pēc instalācijas nepieciešams lejupielādēt modeli:
+
+ollama pull llama3.1:8b
+
+Pēc tam iespējams palaist projektu:
+python main.py
+
+---
 # Vosk modeļa lejupielāde
 
 Tā kā mape `vosk-model-small-en-us-0.15` ir pārāk liela GitHub glabāšanai, tā netiek iekļauta repozitorijā.
