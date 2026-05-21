@@ -16,14 +16,20 @@ from sklearn.svm import SVC
 warnings.filterwarnings("ignore")
 
 
-BASE_DIR = Path(__file__).resolve().parent
-DATASET_DIR = BASE_DIR / "dataset"
 
-MODEL_PATH = BASE_DIR / "emotion_model.pkl"
-ENCODER_PATH = BASE_DIR / "emotion_label_encoder.pkl"
-FEATURE_COLUMNS_PATH = BASE_DIR / "feature_columns.json"
-CLASS_PROFILES_PATH = BASE_DIR / "class_metric_profiles.json"
-MODEL_META_PATH = BASE_DIR / "model_meta.json"
+
+BASE_DIR = Path(__file__).resolve().parent
+
+RESULTS_DIR = BASE_DIR / "results"
+
+RESULTS_DIR.mkdir(exist_ok=True)
+
+DATASET_DIR = BASE_DIR / "dataset"
+MODEL_PATH = RESULTS_DIR / "emotion_model.pkl"
+ENCODER_PATH = RESULTS_DIR / "emotion_label_encoder.pkl"
+FEATURE_COLUMNS_PATH = RESULTS_DIR / "feature_columns.json"
+CLASS_PROFILES_PATH = RESULTS_DIR / "class_metric_profiles.json"
+MODEL_META_PATH = RESULTS_DIR / "model_meta.json"
 
 SUPPORTED_EXTENSIONS = {".wav", ".mp3", ".flac", ".ogg", ".m4a"}
 
