@@ -20,7 +20,7 @@ Projektā tiek izmantoti:
 # Projekta struktūra
 
 project/
-![Assistant Screenshot](struktura.png)
+![Sturktura](struktur.png)
 
 ---
 
