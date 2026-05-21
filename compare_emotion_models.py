@@ -19,9 +19,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
 
 
-# =========================================================
-# PATHS
-# =========================================================
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATASET_PATH = os.path.join(BASE_DIR, "dd")
 RESULTS_DIR = os.path.join(BASE_DIR, "model_comparison_results")
@@ -30,9 +28,7 @@ FEATURES_CACHE_PATH = os.path.join(RESULTS_DIR, "features.pkl")
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 
-# =========================================================
-# FEATURE EXTRACTION
-# =========================================================
+
 def extract_features(file_path: str) -> np.ndarray | None:
     """
     Extract MFCC-based and simple acoustic features from one audio file.
@@ -86,9 +82,7 @@ def extract_features(file_path: str) -> np.ndarray | None:
         return None
 
 
-# =========================================================
-# DATA LOADING
-# =========================================================
+
 def load_dataset(path: str) -> tuple[np.ndarray, np.ndarray]:
     """
     Load dataset from folder structure:
@@ -131,9 +125,7 @@ def load_dataset(path: str) -> tuple[np.ndarray, np.ndarray]:
     return X, y
 
 
-# =========================================================
-# SAVE / LOAD FEATURES CACHE
-# =========================================================
+
 def load_or_create_features() -> tuple[np.ndarray, np.ndarray]:
     if os.path.exists(FEATURES_CACHE_PATH):
         print("Loading cached features...")
@@ -344,9 +336,7 @@ def evaluate_models_train_test(X: np.ndarray, y: np.ndarray) -> pd.DataFrame:
     return results_df
 
 
-# =========================================================
-# MAIN
-# =========================================================
+
 if __name__ == "__main__":
     X, y = load_or_create_features()
 
