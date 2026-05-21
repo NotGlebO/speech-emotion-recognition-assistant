@@ -20,13 +20,7 @@ Projektā tiek izmantoti:
 # Projekta struktūra
 
 project/
-│
-├── main.py
-├── live_emotion_model.py
-├── train_emotion_model.py
-├── results/
-├── dataset/
-└── vosk-model-small-en-us-0.15/
+![Assistant Screenshot](struktura.png)
 
 ---
 
