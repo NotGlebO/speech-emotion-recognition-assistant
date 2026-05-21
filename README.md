@@ -42,7 +42,7 @@ Nepieciešams:
 
 1. Lejupielādēt arhīvu no saites:
 
-PASTE_GOOGLE_DRIVE_LINK_HERE
+[PASTE_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/file/d/13hUYKJz7Th7G7mvNLcPZzN5uXvewMfy0/view?usp=sharing)
 
 2. Izpakot arhīvu.
 
