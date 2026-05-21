@@ -48,7 +48,7 @@ ollama pull llama3.1:8b
 
 # Modeļu salīdzināšana
 
-Lai palaistu modeļu salīdzināšanas skriptu `compare_emotion_models.py`, datu kopas mapei un failam compare_emotion_models.py jāatrodas vienā projekta direktorijā.
+Lai palaistu modeļu salīdzināšanas skriptu `compare_emotion_models.py`, datu kopas mapei un failam `compare_emotion_models.py` jāatrodas vienā projekta direktorijā.
 
 `python compare_emotion_models.py`
 
