@@ -16,10 +16,13 @@ warnings.filterwarnings("ignore")
 
 BASE_DIR = Path(__file__).resolve().parent
 
-MODEL_PATH = BASE_DIR / "emotion_model.pkl"
-ENCODER_PATH = BASE_DIR / "emotion_label_encoder.pkl"
-FEATURE_COLUMNS_PATH = BASE_DIR / "feature_columns.json"
-EMOTION_PROFILES_PATH = BASE_DIR / "class_metric_profiles.json"
+RESULTS_DIR = BASE_DIR / "results"
+
+MODEL_PATH = RESULTS_DIR / "emotion_model.pkl"
+ENCODER_PATH = RESULTS_DIR / "emotion_label_encoder.pkl"
+FEATURE_COLUMNS_PATH = RESULTS_DIR / "feature_columns.json"
+EMOTION_PROFILES_PATH = RESULTS_DIR / "class_metric_profiles.json"
+MODEL_META_PATH = RESULTS_DIR / "model_meta.json"
 
 SR = 16000
 CHANNELS = 1
