@@ -1,0 +1,14 @@
+{
+  "sample_rate": 16000,
+  "segment_seconds": 3,
+  "segment_overlap_seconds": 1.5,
+  "n_mfcc": 13,
+  "classes": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad"
+  ],
+  "model_type": "SVM_RBF",
+  "evaluation_type": "train_test_split_stratified"
+}
