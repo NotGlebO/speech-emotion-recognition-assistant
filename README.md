@@ -44,8 +44,6 @@ Pēc instalācijas nepieciešams lejupielādēt modeli:
 
 ollama pull llama3.1:8b
 
-Pēc tam iespējams palaist projektu:
-python main.py
 
 ---
 # Vosk modeļa lejupielāde
