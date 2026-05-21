@@ -1,0 +1,54 @@
+{
+  "angry": {
+    "duration_sec": 3.0,
+    "voiced_ratio": 0.430895,
+    "f0_mean_hz": 204.405435,
+    "f0_std_hz": 29.266884,
+    "pitch_range_semitones": 9.23587,
+    "rms_mean": 0.068126,
+    "zcr_mean": 0.124656,
+    "centroid_mean": 1420.159058,
+    "bandwidth_mean": 895.273768,
+    "rolloff_mean": 2291.013949,
+    "flatness_mean": 0.3011
+  },
+  "happy": {
+    "duration_sec": 3.0,
+    "voiced_ratio": 0.387483,
+    "f0_mean_hz": 205.301702,
+    "f0_std_hz": 30.759301,
+    "pitch_range_semitones": 8.888578,
+    "rms_mean": 0.061931,
+    "zcr_mean": 0.102091,
+    "centroid_mean": 1184.618228,
+    "bandwidth_mean": 801.291911,
+    "rolloff_mean": 1964.095804,
+    "flatness_mean": 0.388877
+  },
+  "neutral": {
+    "duration_sec": 3.0,
+    "voiced_ratio": 0.552984,
+    "f0_mean_hz": 153.844977,
+    "f0_std_hz": 23.035656,
+    "pitch_range_semitones": 9.788235,
+    "rms_mean": 0.06042,
+    "zcr_mean": 0.101842,
+    "centroid_mean": 1134.916403,
+    "bandwidth_mean": 762.06509,
+    "rolloff_mean": 1856.980747,
+    "flatness_mean": 0.325308
+  },
+  "sad": {
+    "duration_sec": 3.0,
+    "voiced_ratio": 0.508162,
+    "f0_mean_hz": 173.744714,
+    "f0_std_hz": 21.92963,
+    "pitch_range_semitones": 8.577441,
+    "rms_mean": 0.061428,
+    "zcr_mean": 0.109062,
+    "centroid_mean": 1204.568114,
+    "bandwidth_mean": 793.57835,
+    "rolloff_mean": 1954.711077,
+    "flatness_mean": 0.306706
+  }
+}
