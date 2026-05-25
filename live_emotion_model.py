@@ -130,7 +130,7 @@ def split_audio(y: np.ndarray, sr: int, window_sec: float = WINDOW_SEC, overlap_
 
         start += step_size
 
-    # если запись короче 3 секунд или после цикла ничего нет
+   
     if not segments and len(y) > 0:
         segments.append(pad_if_needed(y, window_size))
 
@@ -180,7 +180,7 @@ def extract_feature_dict_from_signal(y: np.ndarray, sr: int) -> dict:
         "pitch_range_semitones": pitch_range_semitones,
     }
 
-    # aligned names with train
+    
     features.update(safe_stats(f0_valid, "f0"))
     features.update(safe_stats(rms, "rms"))
     features.update(safe_stats(zcr, "zcr"))
@@ -370,13 +370,7 @@ def print_segment_timeline(result: dict, segment_sec: float = WINDOW_SEC, overla
 
 
 def predict_emotion_from_audio(audio: np.ndarray, sample_rate: int = SR, debug: bool = False) -> dict:
-    """Predict emotion from an already recorded audio signal.
-
-    This function is intended for integration with the voice assistant pipeline.
-    It reuses the same preprocessing, segmentation and feature extraction logic
-    as the standalone live_emotion_model.py script, but returns a structured dict
-    instead of only printing results.
-    """
+    
     if not MODEL_PATH.exists():
         raise FileNotFoundError(f"Model not found: {MODEL_PATH}")
     if not ENCODER_PATH.exists():
@@ -392,7 +386,7 @@ def predict_emotion_from_audio(audio: np.ndarray, sample_rate: int = SR, debug: 
 
     audio = np.asarray(audio, dtype=np.float32).flatten()
 
-    # If the wakeword recorder uses another sample rate, resample to SER sample rate.
+    
     if sample_rate != SR:
         audio = librosa.resample(audio, orig_sr=sample_rate, target_sr=SR).astype(np.float32)
 
