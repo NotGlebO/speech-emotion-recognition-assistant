@@ -30,9 +30,6 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 
 
 def extract_features(file_path: str) -> np.ndarray | None:
-    """
-    Extract MFCC-based and simple acoustic features from one audio file.
-    """
     try:
         signal, sr = librosa.load(file_path, sr=None, duration=3.0)
 
@@ -84,14 +81,6 @@ def extract_features(file_path: str) -> np.ndarray | None:
 
 
 def load_dataset(path: str) -> tuple[np.ndarray, np.ndarray]:
-    """
-    Load dataset from folder structure:
-    dataset/
-        angry/
-        happy/
-        sad/
-        neutral/
-    """
     X = []
     y = []
 
